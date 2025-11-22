@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'bit-operator';
+  src: url(../fonts/8bitOperatorPlus-Regular.ttf);
+}
+
+body {
+	background: url("../images/deltarune-poster.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: #ffffff;
+	font-family: system-ui, sans-serif;
+}
+
+header, main, footer {
+	max-width: 800px;
+	margin: auto;
+	padding: 1rem;
+}
+
+header, footer {
+	background-color: black;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	gap: 1rem;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+header nav ul li a:hover {
+	text-decoration: underline;
+	color: yellow;
+}
+
+main {
+	background-color: #121212A0;
+	backdrop-filter: blur(10px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'bit-operator', system-ui, sans-serif;
+}
+
+a {
+	font-family: 'bit-operator', system-ui, sans-serif;
+	color: yellow;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0;
+}
+
+footer ul li a {
+	text-decoration: none;
+	color: white;
+	display: flex;	
+	align-items: center;
+}
+
+footer ul li a:hover {
+	color: yellow;
+}
+
+.title {
+	text-align: center;
+}
+
+.img-full {
+	width: 100%;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.flex-gap {
+	gap: 1rem;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.social-icon {
+	width: 30px;
+	margin-right: 1rem;
+}

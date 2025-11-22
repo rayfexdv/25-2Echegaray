@@ -1,0 +1,13 @@
+.container-character {
+	padding: 1rem;
+	transition: background-color 0.3s;
+}
+
+.container-character:hover {
+	background-color: #22222280;
+}
+
+.img-character {
+	width: 150px;
+	flex-shrink: 0;
+}
