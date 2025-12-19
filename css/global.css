@@ -19,31 +19,89 @@ header, main, footer {
 }
 
 header, footer {
+	position: relative;
 	background-color: black;
 }
 
-header {
+.video-container {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+	max-width: 600px;
+}
+
+.header-desktop {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-header nav ul {
+.header-desktop ul {
 	list-style: none;
 	padding: 0;
 	display: flex;
 	gap: 1rem;
 }
 
-header nav ul li a {
+.header-desktop ul li a {
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
 }
 
-header nav ul li a:hover {
+.header-desktop ul li a:hover {
 	text-decoration: underline;
 	color: yellow;
+}
+
+.header-mobile {
+	width: 100%;
+	display: none;
+}
+
+.menu-checkbox {
+	display: none;
+}
+
+.menu-button {
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.mobile-menu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background-color: black;
+	border-top: 1px solid #444;
+	z-index: 1000;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.mobile-menu li a {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+	padding: 1rem;
+	border-bottom: 1px solid #444;
+}
+
+.mobile-menu li a:hover {
+	color: yellow;
+}
+
+.menu-checkbox:checked ~ .mobile-menu {
+	display: flex;
 }
 
 main {
@@ -111,4 +169,16 @@ footer ul li a:hover {
 .social-icon {
 	width: 30px;
 	margin-right: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+	.header-desktop {
+		display: none;
+	}
+
+	.header-mobile {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 }

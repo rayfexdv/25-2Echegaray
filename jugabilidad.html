@@ -9,19 +9,45 @@
 </head>
 <body>
   <header>
-    <a href="./index.html">
-      <img src="./images/deltarune-logo.png" alt="Logo de Deltarune" width="200">
-    </a>
-    <nav>
-      <ul>
-        <li><a href="./index.html">Inicio</a></li>
-        <li><a href="./historia.html">Historia</a></li>
-        <li><a href="./personajes.html">Personajes</a></li>
-        <li><a href="./jugabilidad.html">Jugabilidad</a></li>
-        <li><a href="./comunidad.html">Comunidad</a></li>
-        <li><a href="./autor.html">Autor</a></li>
-      </ul>
-    </nav>
+    <div class="header-desktop">
+      <a href="./index.html">
+        <img src="./images/deltarune-logo.png" alt="Logo de Deltarune" width="200">
+      </a>
+      <nav>
+        <ul>
+          <li class="heart-hover"><a href="./index.html">Inicio</a></li>
+          <li class="heart-hover"><a href="./historia.html">Historia</a></li>
+          <li class="heart-hover"><a href="./personajes.html">Personajes</a></li>
+          <li class="heart-hover"><a href="./jugabilidad.html">Jugabilidad</a></li>
+          <li class="heart-hover"><a href="./comunidad.html">Comunidad</a></li>
+          <li class="heart-hover"><a href="./autor.html">Autor</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-mobile">
+      <a href="./index.html">
+        <img src="./images/deltarune-logo.png" alt="Logo de Deltarune" width="200">
+      </a>
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+        <label for="menu-toggle" class="menu-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu">
+            <path d="M4 5h16"/>
+            <path d="M4 12h16"/>
+            <path d="M4 19h16"/>
+          </svg>
+        </label>
+        <ul class="mobile-menu">
+          <li class="heart-hover"><a href="./index.html">Inicio</a></li>
+          <li class="heart-hover"><a href="./historia.html">Historia</a></li>
+          <li class="heart-hover"><a href="./personajes.html">Personajes</a></li>
+          <li class="heart-hover"><a href="./jugabilidad.html">Jugabilidad</a></li>
+          <li class="heart-hover"><a href="./comunidad.html">Comunidad</a></li>
+          <li class="heart-hover"><a href="./autor.html">Autor</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>

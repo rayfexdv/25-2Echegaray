@@ -11,3 +11,14 @@
 	width: 150px;
 	flex-shrink: 0;
 }
+
+@media only screen and (max-width: 800px) {
+	.container-character {
+		flex-direction: column-reverse;
+		align-items: center;
+		text-align: center;
+	}
+	.img-character {
+		width: 100px;
+	}
+}

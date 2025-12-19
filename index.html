@@ -9,25 +9,51 @@
 </head>
 <body>
   <header>
-    <a href="./index.html">
-      <img src="./images/deltarune-logo.png" alt="Logo de Deltarune" width="200">
-    </a>
-    <nav>
-      <ul>
-        <li class="heart-hover"><a href="./index.html">Inicio</a></li>
-        <li class="heart-hover"><a href="./historia.html">Historia</a></li>
-        <li class="heart-hover"><a href="./personajes.html">Personajes</a></li>
-        <li class="heart-hover"><a href="./jugabilidad.html">Jugabilidad</a></li>
-        <li class="heart-hover"><a href="./comunidad.html">Comunidad</a></li>
-        <li class="heart-hover"><a href="./autor.html">Autor</a></li>
-      </ul>
-    </nav>
+    <div class="header-desktop">
+      <a href="./index.html">
+        <img src="./images/deltarune-logo.png" alt="Logo de Deltarune" width="200">
+      </a>
+      <nav>
+        <ul>
+          <li class="heart-hover"><a href="./index.html">Inicio</a></li>
+          <li class="heart-hover"><a href="./historia.html">Historia</a></li>
+          <li class="heart-hover"><a href="./personajes.html">Personajes</a></li>
+          <li class="heart-hover"><a href="./jugabilidad.html">Jugabilidad</a></li>
+          <li class="heart-hover"><a href="./comunidad.html">Comunidad</a></li>
+          <li class="heart-hover"><a href="./autor.html">Autor</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-mobile">
+      <a href="./index.html">
+        <img src="./images/deltarune-logo.png" alt="Logo de Deltarune" width="200">
+      </a>
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+        <label for="menu-toggle" class="menu-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu">
+            <path d="M4 5h16"/>
+            <path d="M4 12h16"/>
+            <path d="M4 19h16"/>
+          </svg>
+        </label>
+        <ul class="mobile-menu">
+          <li class="heart-hover"><a href="./index.html">Inicio</a></li>
+          <li class="heart-hover"><a href="./historia.html">Historia</a></li>
+          <li class="heart-hover"><a href="./personajes.html">Personajes</a></li>
+          <li class="heart-hover"><a href="./jugabilidad.html">Jugabilidad</a></li>
+          <li class="heart-hover"><a href="./comunidad.html">Comunidad</a></li>
+          <li class="heart-hover"><a href="./autor.html">Autor</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
     <section class="flex flex-column items-center">
       <div><h1 class="title">¡Bienvenido a Deltarune!</h1></div>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/yDzgiGdekas?si=zKufawe4aiyMSX7_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe class="video-container" src="https://www.youtube.com/embed/yDzgiGdekas?si=zKufawe4aiyMSX7_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <h2>¿Qué es <em>Deltarune</em>?</h2>
       <p>Deltarune es un videojuego de rol creado por <em>Toby Fox</em>, creador de <em>Undertale</em>.</p>
       <p>El <strong>jugador controla a un humano</strong>, <strong><a href="./personajes.html#Kris">Kris</a></strong>, en un mundo donde los monstruos viven en la superficie de la Tierra. Kris y una compañera de clase llamada <strong><a href="./personajes.html#Susie">Susie</a></strong> caen de la Tierra a un lugar llamado <em>Dark World</em> donde se encuentran con <strong><a href="./personajes.html#Ralsei">Ralsei</a></strong>, quien les informa que son héroes destinados a restaurar el equilibrio del mundo. Los jugadores se encuentran con varios seres que se hacen llamar <em>Darkners</em> durante una búsqueda profetizada para sellar la fuente oscura.</p>
