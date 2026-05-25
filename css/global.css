@@ -4,7 +4,7 @@
 }
 
 body {
-	background: url("../images/deltarune-poster.webp");
+	background: black url("../images/deltarune-poster.webp");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
